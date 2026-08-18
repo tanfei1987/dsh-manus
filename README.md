@@ -1,6 +1,6 @@
 # dsh-manus
 
-把 **Manus** 接进 DSH 的插件：用你自己的 Manus API Key（官方 [open.manus.im](https://open.manus.im/docs/v2/introduction) v2 API）在聊天里直接给 Manus 发指令，把它的成果（最终答复 + 附件文件）拿回本机。适合你有 Manus 订阅积分（如 4000 积分会员）时，让 DSH 智能体随时调度 Manus。
+把 **Manus** 接进 DSH 的插件：用你自己的 Manus API Key（官方 [open.manus.im](https://open.manus.im/docs/v2/introduction) v2 API）在聊天里直接给 Manus 发指令，把它的成果（最终答复 + 附件文件）拿回本机。让 DSH 智能体随时调度 Manus。
 
 ## 功能
 
