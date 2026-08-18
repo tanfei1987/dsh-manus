@@ -59,6 +59,7 @@ cd dsh-manus && pnpm install
 - API Key 存 `~/.dsh/manus.json`（0600），或环境变量；任何界面都只显示掩码，不返回明文。
 - 路由 `loopback-only`：只有本机（127.0.0.1）可访问 `/api/dsh-manus/*`，避免局域网暴露。
 - 任务耗时不定，`manus_run` 默认最多等 60 秒，超时后任务仍在后台运行，可继续轮询。
+- 附件默认在 **浏览器新窗口打开 manus.im 预览**（`https://manus.im/app/<task_id>?previewEventId=…`）：插件从 verbose 任务消息里把每个 `assistant_message` 附件和最近的 `tool_used` 关联，定位到产生该文件的步骤。侧边栏每个附件链接默认跳预览，旁边仍有「⬇」走原下载代理；agent 工具输出里同时给出预览链接与 CDN URL，便于直接复制。
 - 附件下载依赖 Manus 文件 CDN 的可用性；图片/PDF/PPT/Excel 等均可下载。
 
 ## 技术说明
