@@ -1,0 +1,8 @@
+# dsh-manus bundle patch: inserts the plugin row into the web profile roster.
+# The row is a bare plugin by package name: the node half (exports ".") runs
+# in the host process (Manus engine, /api/dsh-manus routes, agent tools), and
+# the `dsh.client` declaration in package.json makes the browser half
+# (exports "./client") load in the web GUI (sidebar Manus panel).
+- insert:
+    - id: manus
+      name: 'dsh-manus'

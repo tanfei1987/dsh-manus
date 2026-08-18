@@ -1,0 +1,34 @@
+{
+  "name": "dsh-manus",
+  "description": "Manus 集成插件（DSH Web GUI）：用你自己的 Manus API Key（官方 open.manus.im v2 API）把 Manus 接进 DSH。聊天里直接发指令给 Manus（manus_run / manus_create / manus_poll / manus_result / manus_reply / manus_tasks / manus_stop / manus_credits / manus_config），拉回成果与附件；侧边栏「Manus」面板可配置 Key、看余额、发任务、查结果。",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}
